@@ -1,0 +1,30 @@
+/* v9: glowing buttons, hero photo slideshow, lab levels */
+@keyframes v9glow{0%,100%{box-shadow:0 0 6px rgba(99,102,241,.45),0 4px 14px rgba(79,70,229,.25)}50%{box-shadow:0 0 18px rgba(99,102,241,.85),0 6px 22px rgba(124,58,237,.4)}}
+@keyframes v9shine{0%{transform:translateX(-130%) skewX(-20deg)}60%,100%{transform:translateX(230%) skewX(-20deg)}}
+.b,.d8b,button.b,.v7 .b,#t-shop button,.v9btn{position:relative;overflow:hidden;cursor:pointer;transition:transform .15s,filter .15s;animation:v9glow 2.6s ease-in-out infinite}
+.b::after,.d8b::after,.v9btn::after{content:"";position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:v9shine 3.2s infinite;pointer-events:none}
+.b:hover,.d8b:hover,.v9btn:hover{transform:translateY(-2px) scale(1.03);filter:brightness(1.1)}
+.b:active,.d8b:active,.v9btn:active{transform:scale(.97)}
+.b.gr{animation-name:v9glowg}.b.hi{animation-name:v9glowh}
+@keyframes v9glowg{0%,100%{box-shadow:0 0 6px rgba(16,185,129,.5)}50%{box-shadow:0 0 18px rgba(16,185,129,.9)}}
+@keyframes v9glowh{0%,100%{box-shadow:0 0 6px rgba(245,158,11,.55)}50%{box-shadow:0 0 18px rgba(245,158,11,.95)}}
+.d8q a,.d8tools a{transition:transform .2s,box-shadow .2s}.d8q a:hover,.d8tools a:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(79,70,229,.35)}
+@media(prefers-reduced-motion:reduce){.b,.d8b,.v9btn{animation:none}.b::after,.d8b::after,.v9btn::after{display:none}}
+/* hero photos */
+.d8hero.v9h{color:#fff;background:#1b1f4a}
+.d8hero.v9h svg.art,.d8hero.v9h .tag{display:none}
+.d8hero.v9h h1 span{color:#fcd34d}
+.d8hero.v9h small,.d8hero.v9h p{color:#fff;text-shadow:0 1px 6px #0008}
+.v9sl{position:absolute;inset:0;z-index:0}.v9sl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.4s}.v9sl img.on{opacity:1}
+.v9sl::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,18,70,.88) 0%,rgba(30,27,95,.65) 55%,rgba(15,118,110,.35) 100%)}
+.d8hero.v9h>div{z-index:2}
+/* lab */
+#v9lab h3{margin:.2em 0}.v9pb{height:12px;border-radius:9px;background:var(--ln,#dbe2ee);overflow:hidden;margin:6px 0}.v9pb i{display:block;height:100%;background:linear-gradient(90deg,#10b981,#4f46e5);transition:width .5s}
+.v9lv{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.v9lv button{border:1px solid var(--ln,#dbe2ee);background:var(--card,#fff);color:inherit;border-radius:20px;padding:6px 12px;font:inherit;cursor:pointer}.v9lv button.on{background:#4f46e5;color:#fff}.v9lv button.lk{opacity:.5;cursor:not-allowed}.v9lv button.dn{border-color:#10b981}
+.v9ls{display:grid;gap:6px;margin:8px 0}.v9ls button{text-align:left;border:1px solid var(--ln,#dbe2ee);background:var(--card,#fff);color:inherit;border-radius:10px;padding:8px 10px;font:inherit;cursor:pointer}.v9ls button.on{outline:2px solid #4f46e5}.v9ls button.lk{opacity:.5;cursor:not-allowed}
+.v9box{border-left:4px solid #4f46e5;background:var(--soft,#eef0ff);border-radius:8px;padding:8px 12px;margin:8px 0}.v9box.r{border-color:#f59e0b}.v9box.t{border-color:#10b981}
+.v9vars{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}.v9var{border:2px solid #4f46e5;border-radius:10px;min-width:90px;text-align:center;background:var(--card,#fff);overflow:hidden}.v9var small{display:block;background:#4f46e5;color:#fff;padding:2px 8px}.v9var b{display:block;padding:8px;font-family:monospace;transition:background .3s}.v9var.ch b{background:#fde68a;color:#000}
+.v9mcq{margin:8px 0}.v9mcq button{display:block;width:100%;text-align:left;margin:4px 0;padding:8px 10px;border:1px solid var(--ln,#dbe2ee);border-radius:8px;background:var(--card,#fff);color:inherit;font:inherit;cursor:pointer}.v9mcq button.ok{background:#d1fae5;border-color:#10b981;color:#065f46}.v9mcq button.no{background:#fee2e2;border-color:#ef4444;color:#991b1b}
+.v9bdg{display:flex;gap:8px;flex-wrap:wrap}.v9bdg span{background:#fef3c7;color:#92400e;border-radius:20px;padding:4px 10px;font-weight:600}
+.v9hl{background:rgba(250,204,21,.35);border-left:3px solid #f59e0b}
+.v9st{background:var(--card,#fff);border:1px solid var(--ln,#dbe2ee);border-radius:12px;padding:12px;margin:10px 0}

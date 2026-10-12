@@ -1,0 +1,14 @@
+/* v6: bright, rounded, colourful interface */
+body{background:linear-gradient(180deg,#eef2ff,#f8fafc 40%)}
+.top{background:linear-gradient(100deg,#2563eb,#7c3aed)!important;border-radius:0 0 22px 22px;box-shadow:0 10px 30px -12px #4338ca}
+.util{background:#0f172a!important}
+nav{background:#fff!important;border-radius:16px;margin:10px;box-shadow:0 6px 20px -12px #1e1b4b80;border:0!important}
+nav button,#subnav button{background:#eef2ff!important;color:#3730a3!important;border:0!important;font-weight:700}
+nav button.on,nav button.gon,#subnav button.on{background:linear-gradient(135deg,#2563eb,#7c3aed)!important;color:#fff!important}
+.hero h1{background:linear-gradient(90deg,#fff,#c7d2fe);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-size:clamp(28px,7vw,44px);line-height:1.15}
+#v6b{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:16px 0}
+.v6btn{display:flex;align-items:center;gap:12px;border:0;border-radius:18px;padding:18px;font:700 17px/1.2 Lexend,system-ui,sans-serif;color:#fff;background:linear-gradient(120deg,var(--g));box-shadow:0 10px 22px -10px #1e1b4b99;cursor:pointer;text-align:left;transition:transform .15s,box-shadow .15s}
+.v6btn span{font-size:26px}.v6btn:active{transform:scale(.97)}.v6btn:hover{transform:translateY(-3px)}
+.card{border:0!important;background:#fff}[data-theme=dark] .card{background:var(--card)}
+.b{border-radius:14px!important;font-weight:700}
+.tile{background:#fff!important}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#12356b"><link rel="apple-touch-icon" href="icons/icon-192.png"><link rel="icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chishti Preparation Academy – VU Exam Prep, Tests & Coding Lab</title>
+<meta name="description" content="Free VU handouts, AI-made MCQ tests, study planner, LMS and coding lab.">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1f5fb;--ink:#13203b;--card:#fff;--ac:#4f46e5;--g:#059669;--hi:#f59e0b;--mut:#5d6a80;--ln:#dbe2ee;--soft:#eef0ff}
+[data-theme=dark]{--bg:#0d1424;--ink:#e8edf8;--card:#162038;--ln:#27355a;--mut:#97a5c2;--soft:#1d2850}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Lexend,system-ui,sans-serif}
+.top{background:linear-gradient(120deg,#1e1b4b,#312e81 55%,#0f766e);color:#fff;padding:10px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.top b{font-size:18px;flex:1 1 180px}.top small{display:block;font-weight:400;color:#c7d2fe;font-size:12px}
+nav{display:flex;gap:4px;overflow-x:auto;background:var(--card);border-bottom:1px solid var(--ln);padding:6px;position:sticky;top:0;z-index:5}
+nav button{flex:none;border:0;background:none;padding:8px 13px;border-radius:8px;font:inherit;color:var(--mut);cursor:pointer}
+nav button.on{background:var(--ac);color:#fff}
+main{max-width:960px;margin:0 auto;padding:14px}section{display:none}section.on{display:block}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:14px;margin-bottom:12px}
+h2{margin:4px 0 10px;font-size:21px}h3{margin:0 0 8px;font-size:16px}
+.b{display:inline-block;background:var(--ac);color:#fff;border:0;border-radius:9px;padding:9px 14px;font:inherit;cursor:pointer;text-decoration:none;margin:3px 3px 3px 0}
+.b.hi{background:var(--hi);color:#2b1c00}.b.gr{background:var(--soft);color:var(--ink)}.b.wa{background:#16a34a}.b.sm{padding:5px 10px;font-size:13px}
+input,select,textarea{font:inherit;padding:8px;border:1px solid var(--ln);border-radius:8px;background:var(--card);color:var(--ink);max-width:100%}
+textarea{width:100%}input[type=text],input[type=password],input[type=url],input[type=tel]{width:100%}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0}
+.out{white-space:pre-wrap;word-break:break-word;background:var(--soft);border-radius:8px;padding:10px;margin-top:8px;min-height:20px;line-height:1.9}
+.hero{background:linear-gradient(135deg,#312e81,#4f46e5 50%,#0d9488);color:#fff;border-radius:16px;padding:26px 18px;margin-bottom:12px}
+.hero h1{margin:0 0 8px;font-size:27px;line-height:1.25}.hero p{margin:0 0 12px;color:#e0e7ff;max-width:560px}
+.tick{background:#fef3c7;color:#78350f;border-radius:10px;padding:8px 12px;margin-bottom:12px;overflow:hidden;white-space:nowrap}.tick div{display:inline-block;padding-left:100%;animation:mq 30s linear infinite}
+@keyframes mq{to{transform:translateX(-100%)}}@media(prefers-reduced-motion:reduce){.tick div{animation:none;padding:0}}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin-bottom:12px}
+.grid .card{margin:0;border-top:4px solid var(--c);cursor:pointer}.grid p{margin:0;color:var(--mut);font-size:13px}
+.stats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.stats div{flex:1 1 120px;background:var(--card);border:1px solid var(--ln);border-radius:10px;padding:10px;text-align:center}.stats b{display:block;font-size:22px;color:var(--ac)}
+.file,.tk,.pg{display:flex;justify-content:space-between;gap:8px;align-items:center;border-top:1px solid var(--ln);padding:8px 0;flex-wrap:wrap}.file span,.pg span{word-break:break-word;flex:1 1 200px}
+.q{border-top:1px solid var(--ln);padding:10px 0}.q label{display:block;padding:4px 6px;border-radius:6px;cursor:pointer}
+.ok{background:#bbf7d0;color:#052e16}.bad{background:#fecaca;color:#450a0a}.mut{color:var(--mut);font-size:13px}
+#timer{font-weight:700;color:#dc2626}#ed{height:330px;border:1px solid var(--ln);border-radius:8px}iframe{width:100%;height:200px;border:1px solid var(--ln);border-radius:8px;background:#fff}
+.me{text-align:right}.me div{display:inline-block;background:var(--ac);color:#fff;border-radius:12px;padding:6px 12px;max-width:85%;text-align:left;margin:2px 0}
+.bot div{display:inline-block;background:var(--soft);border-radius:12px;padding:6px 12px;max-width:92%;white-space:pre-wrap;margin:2px 0}
+.tk.dn span{text-decoration:line-through;color:var(--mut)}.tk span{flex:1 1 200px}.rv{border-left:4px solid var(--hi);padding:4px 10px;margin:8px 0}.rv img{max-width:160px;border-radius:8px;display:block}
+footer{background:#1e1b4b;color:#c7d2fe;padding:22px 14px;font-size:14px}footer>div{max-width:960px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}footer a{color:#fff;display:block;cursor:pointer;margin:3px 0}footer h4{color:#fff;margin:0 0 6px}
+.util{background:#0f172a;display:flex;gap:12px;align-items:center;padding:6px 12px;flex-wrap:wrap}.util .sp{flex:1}.util .u{background:none;border:0;color:#cbd5e1;font:inherit;font-size:13px;cursor:pointer}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.chip{border:1px solid var(--ln);background:var(--card);color:var(--ink);border-radius:20px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.steps{counter-reset:s;padding:0;list-style:none}.steps li{counter-increment:s;padding:10px 0 10px 44px;position:relative;border-top:1px solid var(--ln)}.steps li:before{content:counter(s);position:absolute;left:0;top:10px;width:30px;height:30px;border-radius:50%;background:var(--ac);color:#fff;text-align:center;line-height:30px;font-weight:700}
+.grid .card{cursor:default}.hero h2{color:#fff}#lmsf{height:70vh}
+</style><link rel="stylesheet" href="theme-v6.css"><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme-v7.css"><link rel="stylesheet" href="v8.css"><meta name="theme-color" content="#0d5c63"><link rel="stylesheet" href="v9.css"></head><body>
+<div class="util"><a class="b wa sm" id="wa1" target="_blank" rel="noopener">View WhatsApp Channel</a><span class="sp"></span><button class="u" onclick="go('contact')">Contact</button><button class="u" onclick="go('admin')">Admin</button><button class="u" onclick="theme()">Dark / Light</button></div>
+<div class="top"><b>Chishti Preparation Academy<small>Exam preparation, practice tests and study tools for Virtual University students</small></b></div>
+<nav id="nav"></nav>
+<main>
+<section id="t-home">
+<div class="hero"><h1>Exam preparation for Virtual University students</h1><p>A searchable handout library, AI-assisted practice tests, a study planner and a guided coding lab, together in one professional study portal.</p><button class="b hi" onclick="go('apply')">How to apply</button></div>
+<div class="tick"><div id="tickr"></div></div>
+<div class="stats"><div><b id="st1">–</b>Handouts and papers</div><div><b id="st2">–</b>Programs</div><div><b>3</b>Programming languages</div><div><b>4</b>Explanation languages</div></div>
+<h2>What we offer</h2>
+<div class="grid">
+<div class="card" style="--c:#4f46e5"><h3>Handout library</h3><p>Search handouts, midterm and final-term papers, quizzes and assignments, and download them instantly.</p></div>
+<div class="card" style="--c:#f59e0b"><h3>Practice test center</h3><p>Generate MCQs, short and long questions from any handout, including important and repeated questions based on paper reports.</p></div>
+<div class="card" style="--c:#059669"><h3>Study planner</h3><p>Plan each subject with dates and priorities, or generate an automatic schedule up to your exam date.</p></div>
+<div class="card" style="--c:#db2777"><h3>Coding lab</h3><p>Python, JavaScript and HTML with a live editor, graded challenges and instant error explanations.</p></div>
+<div class="card" style="--c:#0891b2"><h3>Official LMS access</h3><p>Open the official LMS inside this portal, with direct links to admissions and official channels.</p></div>
+<div class="card" style="--c:#7c3aed"><h3>Program guide</h3><p>Browse every program level and view the overview, eligibility, scheme of study and career scope.</p></div></div>
+<div class="card"><h3>Official channels and links</h3><div id="grp"></div></div>
+<div class="card"><h3>Student reviews</h3><div id="rvh"></div></div>
+<div class="card"><h3>Explanation language</h3><select class="lang"></select> <span class="mut">Explanations and test answers appear in the language you choose. Your settings stay in your own browser.</span></div>
+<div class="card"><h3>Frequently asked questions</h3>
+<details><summary>Is the portal free?</summary><p>Yes. Handouts, tests, the planner and the coding lab are free to use.</p></details>
+<details><summary>How are practice tests created?</summary><p>Select a handout and a page range. The AI reads that text and writes MCQs, short or long questions with answers.</p></details>
+<details><summary>Where is my data stored?</summary><p>Scores, plans and reviews are stored in your own browser. Clearing browser data removes them.</p></details>
+<details><summary>Can I use my own PDF?</summary><p>Yes. Upload a PDF in the Test Center. It is read in your browser and is not stored on our side.</p></details></div>
+</section>
+
+<section id="t-lib"><div class="card"><h2>Handout library</h2>
+<div class="row"><input type="text" id="fs" placeholder="Search by course code or title, e.g. CS101 lecture 5" style="flex:1 1 220px"><select id="ffold"><option value="">All folders</option></select></div>
+<div class="chips" id="chips"></div>
+<p class="mut"><span id="fcount">Loading…</span> <button class="b sm gr" onclick="loadLib()">Reload</button></p><div id="flist"></div></div></section>
+
+<section id="t-test"><div class="card"><h2>Test Center</h2>
+<div class="row"><input type="file" id="up" accept=".pdf,.txt"><button class="b gr" onclick="go('lib')">Choose from library</button></div>
+<p id="docinfo" class="mut">No file selected yet.</p>
+<div class="row">Pages <input type="number" id="pf" value="1" min="1" style="width:70px"> to <input type="number" id="pt" value="5" min="1" style="width:70px"></div>
+<div class="row"><select id="mode"><option>Midterm</option><option>Final term</option><option>Quiz / GDB</option><option>Important &amp; repeated questions</option></select>
+<select id="qt"><option value="mcq">MCQs</option><option value="short">Short questions</option><option value="long">Long questions</option></select>
+Questions <input type="number" id="qn" value="10" min="3" max="30" style="width:70px"> Minutes <input type="number" id="qm" value="10" min="1" style="width:70px"> <select class="lang"></select></div>
+<textarea id="rvnote" rows="2" placeholder="Paper reports (optional): paste topics or questions that students say came in recent papers. They will be prioritised."></textarea><button class="b hi" onclick="makeTest()">Create test</button><button class="b" onclick="explain()">Explain these pages</button><div id="status" class="mut"></div></div>
+<div class="card" id="quizcard" style="display:none"><div class="row"><b id="timer"></b><b id="score"></b></div><div id="quiz"></div><button class="b hi" id="submit" onclick="finish()">Submit test</button></div>
+<div class="card" id="expcard" style="display:none"><h3>Explanation</h3><div class="out" id="exp"></div><button class="b gr" onclick="explain(1)">Next part</button></div>
+<div class="card"><h3>Past scores</h3><div id="hist" class="mut"></div></div></section>
+
+<section id="t-plan"><div class="card"><h2>Study Planner</h2>
+<h3>Add a task</h3><div class="row"><input type="text" id="tt" placeholder="Task, e.g. Read lectures 1-5" style="flex:1 1 220px"><input type="text" id="ts" placeholder="Subject" style="flex:1 1 120px"></div>
+<div class="row"><input type="date" id="td"><select id="tp"><option>High</option><option selected>Medium</option><option>Low</option></select><select id="tf"><option value="">No handout</option></select><input type="text" id="tn" placeholder="Notes" style="flex:1 1 160px"><button class="b" onclick="addTask()">Add</button></div></div>
+<div class="card"><h3>Auto plan for my exams</h3><div class="row"><input type="text" id="as" placeholder="Subjects, comma separated: CS101, MTH100, ENG101" style="flex:1 1 260px"></div>
+<div class="row">Exam date <input type="date" id="ad"> Hours/day <input type="number" id="ah" value="3" min="1" max="10" style="width:70px"><button class="b hi" onclick="autoPlan()">Make plan</button><button class="b gr" onclick="if(confirm('Delete all tasks?')){tasks=[];saveT()}">Clear all</button></div></div>
+<div class="card"><p id="pstat" class="mut"></p><div id="tasks"></div></div></section>
+
+<section id="t-code"><div class="card"><h2>Coding Lab</h2>
+<div class="row"><select id="lg" onchange="setLang()"><option value="python">Python</option><option value="javascript">JavaScript</option><option value="html">HTML</option></select><select class="lang"></select>
+<button class="b" onclick="run()">Run</button><button class="b gr" onclick="explainCode()">Explain my code</button><button class="b hi" onclick="errHelp()">Fix my error</button></div>
+<div id="ed"></div><p class="mut">Python input() is not supported here. Put values in variables.</p>
+<h3>Output</h3><div class="out" id="co"></div><iframe id="fr" style="display:none" sandbox="allow-scripts"></iframe></div>
+<div class="card"><h3>Practice challenges</h3><p class="mut">Pick a challenge, write your solution in the editor, then check it.</p><div class="row"><select id="chs" onchange="showChal()"></select><button class="b sm gr" onclick="loadChal()">Load starter</button><button class="b sm" onclick="checkChal()">Check answer</button><button class="b sm gr" onclick="hintChal()">Hint</button><button class="b sm gr" onclick="solChal()">Show solution</button></div><p id="chi"></p><div class="out" id="chr"></div></div>
+<div class="card"><h3>Learn step by step</h3><div id="topics"></div><div class="row"><input type="text" id="topic" placeholder="Or type any topic: recursion, CSS grid…" style="flex:1 1 200px"><button class="b" onclick="teach()">Teach me</button><button class="b gr" onclick="teach(1)">From my handout</button></div>
+<div class="row"><input type="text" id="tq" placeholder="Ask the tutor about your code…" style="flex:1 1 200px" onkeydown="if(event.key==='Enter')askTutor()"><button class="b hi" onclick="askTutor()">Ask</button></div>
+<div class="out" id="tutor">Run your code, or pick a topic. Help appears here.</div></div></section>
+
+<section id="t-chat"><div class="card"><h2>AI Chatbot</h2><div id="chat" style="min-height:160px"></div>
+<div class="row"><select class="lang"></select><input type="text" id="cm" placeholder="Type your question…" style="flex:1 1 200px" onkeydown="if(event.key==='Enter')send()"><button class="b" onclick="send()">Send</button></div></div></section>
+
+<section id="t-prog"><div class="hero" style="padding:18px"><h2 style="margin:0 0 6px">Programs for every stage of your education</h2><p style="margin:0">Short courses, associate degrees, BS, B.Ed, diplomas and MS. Open any program for its overview, eligibility, scheme of study and career scope.</p></div>
+<div class="card"><div class="row"><input type="text" id="ps" placeholder="Search programs…" style="flex:1 1 200px"><select id="pl"></select></div><p class="mut" id="pc"></p><div id="pl2"></div></div>
+<div class="card"><h3>GPA calculator</h3><div id="gp"></div><button class="b gr" onclick="gpRow()">Add course</button><button class="b" onclick="gpCalc()">Calculate</button> <b id="gpr"></b></div></section>
+
+<section id="t-lms"><div class="card"><a class="b wa" id="wa3" target="_blank" rel="noopener">View WhatsApp Channel</a>
+<h2>Welcome to the Student LMS</h2><p>Sign in with your student ID and password on the official portal below. Your password is typed on the official site and never passes through this website.</p>
+<a class="b" id="lmsopen" target="_blank" rel="noopener">Open official LMS in a new tab</a></div>
+<div class="card"><iframe id="lmsf" title="Official LMS" referrerpolicy="no-referrer"></iframe><p class="mut">If this area stays blank, the official site does not allow embedding. Use the button above to open it.</p></div></section>
+
+<section id="t-rev"><div class="card"><h2>Write a review</h2>
+<div class="row"><input type="text" id="rn" placeholder="Your name" style="flex:1 1 160px"><input type="tel" id="rp" placeholder="Phone number" style="flex:1 1 160px"></div>
+<div class="row"><select id="rs"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select> stars</div>
+<textarea id="rt" rows="3" placeholder="Your experience…"></textarea>
+<div class="row">Optional photo/screenshot <input type="file" id="ri" accept="image/*"></div>
+<button class="b" onclick="sendReview()">Submit review</button><p class="mut">The review is saved on your device and sent to the admin on WhatsApp. Attach your photo there. Approved reviews appear on the home page.</p></div>
+<div class="card"><h3>Reviews</h3><div id="rvl"></div></div></section>
+
+<section id="t-contact"><div class="card"><h2>Contact</h2><p>For study material, access requests or general questions, reach the administrator directly.</p>
+<div class="grid"><div class="card" style="--c:#16a34a"><h3>WhatsApp</h3><p>Message the administrator for support.</p><br><a class="b wa" id="wa" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+<div class="card" style="--c:#4f46e5"><h3>Official channel</h3><p>Announcements and new study material.</p><br><a class="b" id="ch" target="_blank" rel="noopener">View WhatsApp Channel</a></div></div></div>
+<div class="card"><h3>Send a message</h3><div class="row"><input type="text" id="cn" placeholder="Your full name" style="flex:1 1 180px"><select id="ct"><option>Study material request</option><option>Technical issue</option><option>Admission guidance</option><option>Feedback</option><option>Other</option></select></div><textarea id="cmsg" rows="4" placeholder="How can we help?"></textarea><button class="b" onclick="contactSend()">Send via WhatsApp</button></div></section>
+
+<section id="t-apply"><div class="card"><h2>How to apply</h2><p>Follow these steps to take admission. Dates, fees and eligibility are set by the university, so confirm them on the official website before paying anything.</p>
+<ol class="steps"><li><b>Choose a program.</b> Review levels, duration and details under Programs.</li><li><b>Check eligibility.</b> Match your previous qualification and marks with the program requirement.</li><li><b>Prepare documents.</b> Keep scanned copies of your national ID (CNIC or B-Form), academic certificates and a recent photograph.</li><li><b>Apply online.</b> Complete the application on the official admission website.</li><li><b>Pay the admission fee.</b> Use only the payment methods listed on the official website, and keep the receipt.</li><li><b>Receive your student ID and sign in.</b> Open the official LMS to start your courses.</li></ol>
+<a class="b" id="applyopen" target="_blank" rel="noopener">Open official admissions website</a><a class="b wa" id="applylms" target="_blank" rel="noopener">Open official LMS</a><button class="b gr" onclick="go('lms')">Open LMS inside this portal</button></div>
+<div class="card"><h3>Guidelines</h3><ul><li>Apply only through the official website. This portal is an independent study-support service.</li><li>Never share your LMS password with anyone.</li><li>Keep your application and fee receipts until admission is confirmed.</li><li>Follow the academic calendar and submission deadlines shown on the LMS.</li><li>Contact the administrator for help with study material.</li></ul></div></section>
+<section id="t-links"><div class="card"><h2>Important links</h2><p class="mut">Official and community links, maintained by the administrator.</p><div id="linkl"></div></div></section>
+<section id="t-admin"><div id="adm"></div></section>
+</main>
+<footer><div>
+<div><h4>Chishti Preparation Academy</h4>An independent study-support portal for Virtual University students. It is not the official university website.</div>
+<div><h4>Study tools</h4><a onclick="go('lib')">Handout library</a><a onclick="go('test')">Test Center</a><a onclick="go('plan')">Planner</a><a onclick="go('code')">Coding Lab</a><a onclick="go('lms')">LMS</a></div>
+<div><h4>Support</h4><a onclick="go('apply')">How to apply</a><a onclick="go('links')">Important links</a><a onclick="go('rev')">Student reviews</a><a onclick="go('contact')">Contact</a><a onclick="go('priv')">Privacy &amp; Terms</a><a id="fwa" target="_blank" rel="noopener">WhatsApp: 0320 4854766</a><a id="fch" target="_blank" rel="noopener">WhatsApp Channel</a></div>
+<div><h4>Disclaimer</h4>AI-generated questions and explanations can contain mistakes. Always verify with official handouts and the LMS. Your data stays in your browser.</div>
+</div></footer>
+
+<script>const LZ={pdf:'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js',mon:'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js',py:'https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js'},LZp={};
+function lz(k){return LZp[k]||(LZp[k]=new Promise((ok,no)=>{const e=document.createElement('script');e.src=LZ[k];e.onload=ok;e.onerror=()=>{delete LZp[k];no(new Error('Could not load a helper library. Check your internet connection.'))};document.head.appendChild(e)}))}</script>
+<script>window.SUPA={url:'https://pfmlhcykpfytvbbawjez.supabase.co',key:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBmbWxoY3lrcGZ5dHZiYmF3amV6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE3NDUwMjMsImV4cCI6MjEwNzMyMTAyM30.z_ZRvrBYKQH5EJc96upONs9F-1TAoewQ_Ld-B7_calw',email:'saifsaifchishti@gmail.com'};</script>
+<script>
+const CFG={repo:'bubblevuofficial-ops/data',wa:'923204854766',channel:'https://whatsapp.com/channel/0029VbD4X1x1yT22Ckp2Pu1W'};
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s),LS=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},SV=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{}};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const sha=async s=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))].map(x=>x.toString(16).padStart(2,'0')).join('');
+const LANGS={ru:['Roman Urdu','Roman Urdu (Urdu written in English letters)'],en:['English','simple English'],re:['Roman English','very simple Roman English'],ur:['Urdu','Urdu script (اردو)']};
+let lang=LS('lang','ru'),cfg={},files=[],BR='HEAD';
+const DEF={links:[{n:'Official University Website',u:'https://www.vu.edu.pk/'},{n:'Official LMS',u:'https://vulms.vu.edu.pk/'},{n:'WhatsApp Channel',u:CFG.channel},{n:'Contact Admin on WhatsApp',u:'https://wa.me/'+CFG.wa}],lms:'https://vulms.vu.edu.pk/',site:'https://www.vu.edu.pk/',apply:'https://www.vu.edu.pk/',ann:['Welcome to Chishti Preparation Academy. Generate a free practice test from any handout.'],reviews:[],user:'admin',hash:''};
+const TABS=[['home','Home'],['apply','Admissions'],['prog','Programs'],['lib','Handouts'],['test','Test Center'],['plan','Planner'],['code','Coding Lab'],['lms','LMS'],['chat','AI Assistant'],['rev','Reviews'],['links','Important Links'],['contact','Contact']];
+$('#nav').innerHTML=TABS.map(t=>`<button data-t="${t[0]}" onclick="go('${t[0]}')">${t[1]}</button>`).join('');
+function go(t){$$('section').forEach(s=>s.classList.toggle('on',s.id=='t-'+t));$$('nav button').forEach(b=>b.classList.toggle('on',b.dataset.t==t));scrollTo(0,0);SV('tab',t);if(t=='lms')openLMS();if(t=='links')drawLinks();if(t=='admin')drawAdmin();if(t=='plan')fillFiles();if(t=='code')initEd()}
+function theme(){const d=document.documentElement;d.dataset.theme=d.dataset.theme=='dark'?'':'dark';SV('theme',d.dataset.theme)}document.documentElement.dataset.theme=LS('theme','');
+$$('.lang').forEach(s=>{s.innerHTML=Object.entries(LANGS).map(([k,v])=>`<option value="${k}">${v[0]}</option>`).join('');s.value=lang;s.onchange=()=>{lang=s.value;SV('lang',lang);$$('.lang').forEach(x=>x.value=lang)}});
+const L=()=>`Reply in ${LANGS[lang][1]}.`;
+async function ask(p){const c=new AbortController(),t=setTimeout(()=>c.abort(),55000);
+ try{const r=await fetch('/api/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:p}),signal:c.signal});const d=await r.json().catch(()=>({}));if(!d.reply)throw new Error(d.error||'No answer from AI');return d.reply}
+ catch(e){throw new Error(e.name=='AbortError'?'AI took too long. Please try again.':e.message)}finally{clearTimeout(t)}}
+const show=async(el,p)=>{el.textContent='Thinking… (can take up to 30 seconds)';try{el.textContent=await ask(p)}catch(e){el.textContent='Problem: '+e.message}};
+
+// ---------- config (admin-editable) ----------
+async function loadCfg(){let r={};try{r=await(await fetch(`https://raw.githubusercontent.com/${CFG.repo}/HEAD/portal-config.json?t=${Date.now()}`)).json()}catch{}
+ cfg=Object.assign({},DEF,r,LS('cfgL',{}));drawHome()}
+function saveCfg(){SV('cfgL',cfg);drawHome()}
+function drawHome(){const ch=cfg.links.find(l=>/channel/i.test(l.n))?.u||CFG.channel;
+ ['wa1','wa3','ch','fch'].forEach(i=>{const e=$('#'+i);if(e)e.href=ch});['wa','fwa'].forEach(i=>$('#'+i).href='https://wa.me/'+CFG.wa);
+ $('#lmsopen').href=cfg.lms;$('#applylms').href=cfg.lms;$('#applyopen').href=cfg.apply;
+ $('#tickr').textContent=cfg.ann.map(a=>a.t||a).join('   •   ');
+ $('#grp').innerHTML=cfg.links.map(l=>`<a class="b wa" href="${esc(l.u)}" target="_blank" rel="noopener">${esc(l.n)}</a>`).join('');
+ const rv=[...cfg.reviews].reverse();$('#rvh').innerHTML=rv.slice(0,4).map(rvHTML).join('')||'<p class="mut">No reviews yet.</p>';
+ $('#rvl').innerHTML=[...LS('myRev',[]),...rv].map(rvHTML).join('')||'<p class="mut">No reviews yet.</p>'}
+const rvHTML=r=>`<div class="rv"><b>${esc(r.n)}</b> ${'★'.repeat(+r.s||5)}<br>${esc(r.t)}${r.i?`<img src="${r.i}" alt="">`:''}</div>`;
+
+// ---------- files ----------
+const raw=p=>`https://raw.githubusercontent.com/${CFG.repo}/${BR}/${p.split('/').map(encodeURIComponent).join('/')}`;
+async function loadLib(){const errs=[];$('#fcount').textContent='Loading files…';
+ for(const b of ['HEAD','main','master']){try{const d=await(await fetch(`https://api.github.com/repos/${CFG.repo}/git/trees/${b}?recursive=1`)).json();if(d.tree){BR=b;files=d.tree.filter(x=>x.type=='blob').map(x=>x.path);if(files.length)return done()}else errs.push(d.message)}catch(e){errs.push(e.message)}}
+ for(const b of ['main','master']){try{const d=await(await fetch(`https://data.jsdelivr.com/v1/packages/gh/${CFG.repo}@${b}?structure=flat`)).json();if(d.files){BR=b;files=d.files.map(f=>f.name.slice(1));if(files.length)return done()}else errs.push('jsDelivr: '+(d.message||'no files'))}catch(e){errs.push(e.message)}}
+ $('#fcount').textContent='Could not load files ('+(errs.find(Boolean)||'repo is empty')+'). Tap Reload.'}
+function done(){files=files.filter(f=>!/portal-config\.json$/.test(f)).sort();$('#st1').textContent=files.length;folders();drawLib();fillFiles()}
+const CATS=[['All',''],['Midterm','mid'],['Final term','final'],['Past papers','paper|past'],['Quizzes','quiz'],['Assignments','assign'],['GDB','gdb'],['Handouts','handout|lecture'],['Solved','solved|solution'],['Books','book']];let cat='';
+$('#chips').innerHTML=CATS.map((c,i)=>`<button class="chip${i?'':' on'}" onclick="setCat(${i})">${c[0]}</button>`).join('');
+function setCat(i){cat=CATS[i][1];$$('.chip').forEach((b,j)=>b.classList.toggle('on',j==i));drawLib()}
+function folders(){$('#ffold').innerHTML='<option value="">All folders</option>'+[...new Set(files.filter(f=>f.includes('/')).map(f=>f.split('/')[0]))].sort().map(f=>`<option>${esc(f)}</option>`).join('')}
+function drawLib(){const ws=$('#fs').value.toLowerCase().split(/\s+/).filter(Boolean),fo=$('#ffold').value,re=cat?new RegExp(cat,'i'):null,f=files.filter(x=>(!re||re.test(x))&&(!fo||x.startsWith(fo+'/'))&&ws.every(w=>x.toLowerCase().includes(w)));
+ $('#fcount').textContent=f.length+' of '+files.length+' files';
+ $('#flist').innerHTML=f.slice(0,300).map(x=>{const i=files.indexOf(x);return `<div class="file"><span>${esc(x)}</span><button class="b sm gr" onclick="dl(${i})">Download</button>${/\.(pdf|txt)$/i.test(x)?`<button class="b sm" onclick="useFile(${i})">Test / Explain</button>`:''}</div>`}).join('')||'<p class="mut">No files match. Try fewer words or another category.</p>'}
+$('#fs').oninput=drawLib;$('#ffold').onchange=drawLib;
+function findFiles(q){$('#fs').value=q;go('lib');drawLib()}
+async function dl(i){const p=files[i];try{const b=await(await fetch(raw(p))).blob(),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=p.split('/').pop();a.click()}catch{window.open(raw(p),'_blank')}}
+function fillFiles(){$('#tf').innerHTML='<option value="">No handout</option>'+files.map((f,i)=>`<option value="${i}">${esc(f.split('/').pop())}</option>`).join('')}
+let doc=null;
+async function readPDF(buf){await lz('pdf');pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';const pdf=await pdfjsLib.getDocument({data:buf}).promise,pg=[];for(let i=1;i<=pdf.numPages;i++){const t=await(await pdf.getPage(i)).getTextContent();pg.push(t.items.map(x=>x.str).join(' '))}return pg}
+async function setDoc(name,getBuf,isPdf){go('test');$('#docinfo').textContent='Reading file…';
+ try{const buf=await getBuf(),pages=isPdf?await readPDF(buf):[new TextDecoder().decode(buf)];
+  doc={name,pages};$('#pt').value=Math.min(5,pages.length);$('#pt').max=$('#pf').max=pages.length;
+  $('#docinfo').textContent=pages.join(' ').trim().length<50?'No text found (maybe a scanned PDF). Try a text PDF.':`${name} – ${pages.length} pages. Choose pages and create a test.`}catch(e){$('#docinfo').textContent='Could not open file: '+e.message}}
+const useFile=i=>{const p=files[i];setDoc(p,async()=>await(await fetch(raw(p))).arrayBuffer(),/\.pdf$/i.test(p))};
+$('#up').onchange=e=>{const f=e.target.files[0];if(f)setDoc(f.name,()=>f.arrayBuffer(),/\.pdf$/i.test(f.name))};
+
+// ---------- test ----------
+function chunks(n){if(!doc)throw new Error('Select a file first');const a=Math.max(1,+$('#pf').value)-1,b=Math.min(doc.pages.length,+$('#pt').value),t=doc.pages.slice(a,b).join('\n').replace(/\s+/g,' ').trim();
+ if(t.length<50)throw new Error('No text in these pages');const all=[];for(let i=0;i<t.length;i+=1100)all.push(t.slice(i,i+1100));
+ if(all.length<=n)return all;return Array.from({length:n},(_,i)=>all[Math.floor(i*all.length/n)])}
+const parseJ=s=>{const m=s.match(/\[[\s\S]*\]/);if(!m)throw 0;return JSON.parse(m[0])};
+let Q=[],tmr;
+async function makeTest(){const st=$('#status');try{const type=$('#qt').value,n=Math.min(30,+$('#qn').value||10),cs=chunks(Math.min(5,Math.ceil(n/2))),per=Math.ceil(n/cs.length);
+ const shape=type=='mcq'?'[{"q":"question","o":["A","B","C","D"],"a":0,"e":"short reason"}] (a = index 0-3 of the correct option)':'[{"q":"question","a":"model answer"}]';let res=[];const nt=$('#rvnote').value.trim().slice(0,600),imp=/Important/.test($('#mode').value),extra=(imp?'Choose the most important and most frequently repeated exam questions. ':'')+(nt?`Students reported these topics or questions from recent papers; prioritise them: ${nt}. `:'');$('#quizcard').style.display='none';
+ for(let i=0;i<cs.length;i++){st.textContent=`Creating questions… ${i+1}/${cs.length}`;
+  const p=`Task: from the study text below create ${per} ${type=='mcq'?'MCQ':type+' answer'} questions for a Virtual University of Pakistan ${$('#mode').value} exam. Questions in English. Write "e" and "a" in ${LANGS[lang][1]}. ${extra}Return ONLY a JSON array like ${shape}. No other text.\nTEXT: ${cs[i]}`;
+  for(let k=0;k<2;k++){try{res=res.concat(parseJ(await ask(p)).map(x=>({...x,src:cs[i]})));break}catch{}}}
+ if(!res.length)throw new Error('Could not create questions. Try again.');Q=res.slice(0,n);Q.type=type;drawQuiz((+$('#qm').value||10)*60);st.textContent=''}catch(e){st.textContent='Problem: '+e.message}}
+function drawQuiz(secs){const m=Q.type=='mcq';$('#quizcard').style.display='block';$('#score').textContent='';$('#submit').style.display=m?'':'none';
+ $('#quiz').innerHTML=Q.map((q,i)=>`<div class="q"><b>${i+1}. ${esc(q.q)}</b>${m?(q.o||[]).map((o,j)=>`<label id="l${i}_${j}"><input type="radio" name="q${i}" value="${j}"> ${esc(o)}</label>`).join(''):''}<div class="mut" id="e${i}"></div>
+ ${m?'':`<details><summary class="mut">Show model answer</summary><div class="out">${q.a?esc(q.a):'No answer was returned. Use "Answer this".'}</div></details>`}<button class="b sm gr" onclick="ansQ(${i})">Answer this</button><div class="out" id="a${i}" style="display:none"></div></div>`).join('');
+ clearInterval(tmr);$('#timer').textContent='';if(!m)return;let t=secs;const tick=()=>{$('#timer').textContent=`${Math.floor(t/60)}:${String(t%60).padStart(2,'0')}`;if(t--<=0)finish()};tick();tmr=setInterval(tick,1000);$('#quizcard').scrollIntoView()}
+async function ansQ(i){const el=$('#a'+i);el.style.display='block';await show(el,`Answer this exam question properly using the text. ${L()}\nQUESTION: ${Q[i].q}\nTEXT: ${Q[i].src}`)}
+function finish(){clearInterval(tmr);let s=0;Q.forEach((q,i)=>{const c=document.querySelector(`input[name=q${i}]:checked`),a=+q.a;if(c&&+c.value==a)s++;$(`#l${i}_${a}`)?.classList.add('ok');if(c&&+c.value!=a)$(`#l${i}_${c.value}`).classList.add('bad');$('#e'+i).textContent=q.e?'Why: '+q.e:''});
+ $$('#quiz input').forEach(x=>x.disabled=true);$('#submit').style.display='none';$('#timer').textContent='';$('#score').textContent=`Score: ${s}/${Q.length} (${Math.round(s*100/Q.length)}%)`;
+ const h=LS('hist',[]);h.unshift(`${new Date().toLocaleDateString()} – ${doc?.name||''} – ${s}/${Q.length}`);SV('hist',h.slice(0,15));drawHist()}
+const drawHist=()=>$('#hist').innerHTML=LS('hist',[]).map(esc).join('<br>')||'No tests yet.';drawHist();
+let ei=0;async function explain(next){try{ei=next?ei+1:0;const cs=chunks(99);if(ei>=cs.length){ei=cs.length-1;return}$('#expcard').style.display='block';await show($('#exp'),`You are a patient VU teacher. Explain this handout part step by step with simple examples. ${L()}\nTEXT: ${cs[ei]}`)}catch(e){$('#expcard').style.display='block';$('#exp').textContent='Problem: '+e.message}}
+
+// ---------- planner ----------
+let tasks=LS('tasks',[]);const iso=d=>d.toISOString().slice(0,10);
+function addTask(){const t=$('#tt').value.trim();if(!t)return;tasks.push({t,s:$('#ts').value,d:$('#td').value,p:$('#tp').value,f:$('#tf').value,n:$('#tn').value,x:0});$('#tt').value=$('#tn').value='';saveT()}
+function autoPlan(){const S=$('#as').value.split(',').map(x=>x.trim()).filter(Boolean),end=$('#ad').value,h=+$('#ah').value||3;if(!S.length||!end){alert('Enter subjects and exam date');return}
+ const d=new Date(),e=new Date(end);let k=0,n=0;for(;d<e&&n<60;d.setDate(d.getDate()+1),n++){const left=Math.round((e-d)/864e5),rev=left<=3;
+  tasks.push({t:rev?`Revision + mock test of ${S[k%S.length]} (${h}h)`:`Study ${S[k%S.length]}: read handout, then 10 MCQs (${h}h)`,s:S[k%S.length],d:iso(d),p:rev?'High':'Medium',f:'',n:'',x:0});k++}saveT()}
+function saveT(){SV('tasks',tasks);const dn=tasks.filter(x=>x.x).length,td=iso(new Date());$('#pstat').textContent=`Done: ${dn} | Pending: ${tasks.length-dn}`;
+ $('#tasks').innerHTML=tasks.map((x,i)=>[x,i]).sort((a,b)=>(a[0].x-b[0].x)||String(a[0].d||'9').localeCompare(b[0].d||'9')).map(([x,i])=>`<div class="tk ${x.x?'dn':''}"><input type="checkbox" ${x.x?'checked':''} onchange="tasks[${i}].x=this.checked?1:0;saveT()"><span>${esc(x.t)}<br><small class="mut">${x.s?esc(x.s)+' · ':''}${x.d?(x.d<td&&!x.x?'<b style="color:#dc2626">Overdue</b> ':'')+x.d+' · ':''}${x.p}${x.n?' · '+esc(x.n):''}</small></span>${x.f!==''&&files[x.f]?`<button class="b sm" onclick="useFile(${x.f})">Open handout</button>`:''}<button class="b sm gr" onclick="tasks.splice(${i},1);saveT()">Delete</button></div>`).join('')||'<p class="mut">No tasks yet. Add one or make an auto plan.</p>'}saveT();
+
+// ---------- code lab ----------
+const SAMPLE={python:'# Python\nname = "Ali"\nfor i in range(3):\n    print("Hello", name, i)\n',javascript:'// JavaScript\nconst nums = [1, 2, 3];\nconsole.log(nums.map(n => n * 2));\n',html:'<h1>Hello VU</h1>\n<p style="color:teal">My first web page</p>\n'};
+const TOP={python:['Variables','If / else','Loops','Functions','Lists','Operators'],javascript:['Variables','If / else','Loops','Functions','Arrays','Operators'],html:['Page structure','Links and images','Lists and tables','Forms','CSS basics']};
+const ERRS=[[/IndentationError|unexpected indent/i,'Indentation error: lines inside if/for/def must start with the same number of spaces.'],[/SyntaxError|invalid syntax|Unexpected token/i,'Syntax error: check brackets, quotes, colons (:) and spelling near the line shown.'],[/NameError|is not defined/i,'Name error: you used a variable or function that was never created. Check spelling and create it first.'],[/TypeError/i,'Type error: you mixed incompatible types (for example text + number) or used a value the wrong way.'],[/ZeroDivision/i,'You divided by zero.'],[/IndexError|out of range/i,'Index error: that list position does not exist.'],[/KeyError/i,'Key error: that dictionary key does not exist.'],[/ModuleNotFound|ImportError/i,'That library is not available here. Use built-in modules only.']];
+let ed,py,lastErr='',lastOut='';let edLoading=0;async function initEd(){if(ed||edLoading)return;edLoading=1;try{await lz('mon');require.config({paths:{vs:'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs'}});require(['vs/editor/editor.main'],()=>{ed=monaco.editor.create($('#ed'),{value:SAMPLE[$('#lg').value]||SAMPLE.python,language:$('#lg').value||'python',theme:'vs-dark',automaticLayout:true,fontSize:14,minimap:{enabled:false}})})}catch(e){edLoading=0;$('#ed').textContent=e.message}}
+function setLang(){const l=$('#lg').value;if(ed){monaco.editor.setModelLanguage(ed.getModel(),l);ed.setValue(SAMPLE[l])}drawTopics();drawChal()}
+const LG=()=>$('#lg').options[$('#lg').selectedIndex].text;
+function drawTopics(){$('#topics').innerHTML=TOP[$('#lg').value].map(t=>`<button class="b sm gr" onclick="teachTopic('${t}')">${t}</button>`).join('')}drawTopics();
+async function run(){if(!ed){initEd();return alert('Editor is still loading, try again in a few seconds')};const l=$('#lg').value,code=ed.getValue(),o=$('#co'),fr=$('#fr');lastErr='';fr.style.display='none';let out='';
+ if(l=='html'){fr.style.display='block';fr.srcdoc=code;o.textContent='See the preview below.';return}
+ if(l=='javascript'){const log=(...a)=>out+=a.map(x=>typeof x=='object'?JSON.stringify(x):String(x)).join(' ')+'\n';try{new Function('console',code)({log,error:log,warn:log})}catch(e){lastErr=String(e)}}
+ else{o.textContent='Loading Python (first time takes a few seconds)…';try{await lz('py');py=py||await loadPyodide();py.setStdout({batched:s=>out+=s+'\n'});py.setStderr({batched:s=>out+=s+'\n'});await py.runPythonAsync(code)}catch(e){lastErr=String(e.message||e).split('\n').slice(-4).join('\n')}}
+ lastOut=out;o.textContent=out+(lastErr?'\nError:\n'+lastErr:out?'':'(no output)');if(lastErr)errHelp()}
+function errHelp(){if(!lastErr){$('#tutor').textContent='Press Run first. If there is an error, help appears here.';return}
+ const tip=(ERRS.find(e=>e[0].test(lastErr))||[0,'Read the last line of the error: it names the problem and the line number.'])[1];
+ $('#tutor').textContent='Quick tip: '+tip+'\n\nDetailed help is loading…';
+ ask(`A student's ${LG()} code gave an error. Explain it simply, point to the faulty line and give a HINT before the full fix. ${L()}\nCODE:\n${ed.getValue().slice(0,1200)}\nERROR:\n${lastErr.slice(0,400)}`).then(r=>$('#tutor').textContent='Quick tip: '+tip+'\n\n'+r).catch(e=>$('#tutor').textContent='Quick tip: '+tip+'\n\n(AI help failed: '+e.message+' Press "Fix my error" to retry.)')}
+const explainCode=()=>show($('#tutor'),`Explain this ${LG()} code line by line for a beginner: what each part does and why it is used. ${L()}\nCODE:\n${ed.getValue().slice(0,1500)}`);
+const teachTopic=t=>show($('#tutor'),`You are a programming tutor for VU CS101 students. Teach "${t}" in ${LG()} in small steps: what each keyword/operator does, why it is useful, one example with output, then one short practice task. ${L()}`);
+function teach(h){const t=h?(doc?chunks(1)[0]:''):$('#topic').value.trim();if(!t){$('#tutor').textContent=h?'Select a handout in Test Center first.':'Type a topic first.';return}show($('#tutor'),`You are a programming tutor for VU CS101 students. Teach this in ${LG()} step by step with examples and one practice task. ${L()}\nTOPIC/HANDOUT: ${t}`)}
+function askTutor(){const q=$('#tq').value.trim();if(!q)return;$('#tq').value='';show($('#tutor'),`You are a ${LG()} tutor. Answer the student's question; use their code when relevant. ${L()}\nQUESTION: ${q}\nCODE:\n${ed?ed.getValue().slice(0,900):''}\nLAST ERROR: ${lastErr.slice(0,200)}`)}
+
+// ---------- challenges ----------
+const CH={python:[
+{t:'Print a message',i:'Use print() to show exactly: Hello VU',s:'# Write your code below\n',e:'Hello VU',sol:'print("Hello VU")'},
+{t:'Variables and math',i:'Store 7 in a and 5 in b, then print a + b.',s:'a = \nb = \n',e:'12',sol:'a = 7\nb = 5\nprint(a + b)'},
+{t:'If / else',i:'x is 10. Print Even if x is even, otherwise Odd.',s:'x = 10\n',e:'Even',sol:'x = 10\nif x % 2 == 0:\n    print("Even")\nelse:\n    print("Odd")'},
+{t:'Loop',i:'Print the numbers 1 to 5, one per line.',s:'',e:'1\n2\n3\n4\n5',sol:'for i in range(1, 6):\n    print(i)'},
+{t:'Function',i:'Write square(n) that returns n*n, then print square(6).',s:'',e:'36',sol:'def square(n):\n    return n * n\n\nprint(square(6))'}],
+javascript:[
+{t:'Print a message',i:'Use console.log to print exactly: Hello VU',s:'// Write your code below\n',e:'Hello VU',sol:'console.log("Hello VU");'},
+{t:'Sum of an array',i:'Print the sum of [3, 4, 5].',s:'const a = [3, 4, 5];\n',e:'12',sol:'const a = [3, 4, 5];\nconsole.log(a.reduce((s, n) => s + n, 0));'},
+{t:'Function',i:'Write double(n) that returns n*2, then print double(21).',s:'',e:'42',sol:'function double(n) { return n * 2; }\nconsole.log(double(21));'}],
+html:[
+{t:'Heading',i:'Create an h1 heading with the text: My Page',s:'',r:'<h1[^>]*>\\s*My Page\\s*</h1>',sol:'<h1>My Page</h1>'},
+{t:'List',i:'Create an unordered list (ul) with three li items.',s:'',r:'<ul[^>]*>(\\s*<li[^>]*>[^<]*</li>){3}\\s*</ul>',sol:'<ul>\n<li>One</li>\n<li>Two</li>\n<li>Three</li>\n</ul>'}]};
+const cur=()=>CH[$('#lg').value][+$('#chs').value||0];
+function drawChal(){$('#chs').innerHTML=CH[$('#lg').value].map((c,i)=>`<option value="${i}">${i+1}. ${c.t}</option>`).join('');showChal()}
+function showChal(){$('#chi').textContent=cur().i;$('#chr').textContent=''}
+function loadChal(){if(ed)ed.setValue(cur().s)}
+async function checkChal(){const c=cur(),h=$('#lg').value=='html';await run();const ok=h?new RegExp(c.r,'i').test(ed.getValue()):(!lastErr&&lastOut.trim()==c.e);
+ $('#chr').textContent=ok?'Correct. Well done. Move to the next challenge.':'Not yet. '+(h?'A required element is missing.':`Expected output:\n${c.e}\nYour output:\n${lastOut.trim()||'(none)'}`)}
+const solChal=()=>$('#chr').textContent='Solution:\n'+cur().sol;
+const hintChal=()=>show($('#chr'),`Give a short hint (not the full answer) for this ${LG()} exercise: ${cur().i}\nStudent code:\n${ed?ed.getValue().slice(0,600):''}\n${L()}`);
+drawChal();
+
+// ---------- chat ----------
+let hist=[];const addMsg=(c,t)=>{const d=document.createElement('div');d.className=c;const i=document.createElement('div');i.textContent=t;d.append(i);$('#chat').append(d);return i};
+async function send(){const m=$('#cm').value.trim();if(!m)return;$('#cm').value='';addMsg('me',m);const b=addMsg('bot','…');try{const r=await ask(`You are a friendly study assistant of Chishti Preparation Academy for Virtual University of Pakistan students. Answer clearly and briefly. ${L()}\nChat so far:\n${hist.slice(-4).join('\n').slice(-800)}\nStudent: ${m}`);b.textContent=r;hist.push('Student: '+m,'Assistant: '+r.slice(0,200))}catch(e){b.textContent='Problem: '+e.message}}
+
+// ---------- programs + GPA ----------
+const BS='Accounting & Finance,B.Ed Elementary,B.Ed ECCE,BBIT,Bioinformatics,Biotechnology,Business Administration,Commerce,Computer Science,Economics,English (Applied Linguistics),IT,Mass Communication,Mathematics,Psychology,Public Administration,Sociology,Software Engineering,Zoology'.split(','),
+ AD='Accounting & Finance,Arts,Biotechnology,Business Admin,Business Analytics,Commerce,Computer Networking,Computer Science,Data Science,DBMS,ECCE,Economics,Education,English,HRM,Islamic Banking,Mass Communication,Mathematics,Operations Management,Psychology,Public Administration,Sales & Marketing,Science,Sociology,Statistics,Supply Chain Management,Web Design & Development,Zoology'.split(','),
+ DP='Accounting,Accounting & Finance,Applied Psychology,Banking & Finance,Bioinformatics,Business Admin,Computer Science,English Language Teaching,Entrepreneurship & SME Management,Finance,HRM,IT,Linguistics,Marketing Management,Molecular Biology,Public Administration,Television Production'.split(','),
+ SC='Accounting/Banking/Finance,CS/IT,Economics,English,Humanities,Law,Management,Marketing,Mass Communication,Mathematics,Physics,Probability & Statistics,Psychology,Sociology'.split(','),CE='Banking,Finance,HRM,Management,Marketing'.split(',');
+const PR=[...BS.map(n=>['BS-Lateral',n,'2 years']),...[...BS,'Data Science','Islamic Studies','Statistics'].map(n=>['BS',n,'4 years']),['B.Ed','Elementary','2.5 years'],['B.Ed','Secondary','1.5 years'],...AD.map(n=>['Associate Degree',n,'2 years']),['MS','MBA','2 years'],['MS','MS Computer Science','2 years'],...DP.map(n=>['Diploma',n,'1 year']),...SC.map(n=>['Short Course',n,'4 months']),...CE.map(n=>['Specialization Certificate',n,'Short']),['Zero Semester','Zero Semester','1 semester']];
+$('#st2').textContent=PR.length;$('#pl').innerHTML='<option value="">All levels</option>'+[...new Set(PR.map(p=>p[0]))].map(l=>`<option>${l}</option>`).join('');
+function drawProg(){const q=$('#ps').value.toLowerCase(),l=$('#pl').value,f=PR.map((p,i)=>[p,i]).filter(([p])=>(!l||p[0]==l)&&(p[1]+' '+p[0]).toLowerCase().includes(q));$('#pc').textContent=f.length+' programs';
+ $('#pl2').innerHTML=f.slice(0,150).map(([p,i])=>`<div class="pg" style="display:block"><div class="row"><span style="flex:1 1 200px"><b>${esc(p[1])}</b><br><small class="mut">${p[0]} · ${p[2]}</small></span><button class="b sm" onclick="pdet(${i})">View details</button><button class="b sm gr" onclick="findFiles('${p[1].split(/[ (\/]/)[0].replace(/'/g,'')}')">Handouts</button></div><div class="out" id="pd${i}" style="display:none"></div></div>`).join('')}
+async function pdet(i){const el=$('#pd'+i),p=PR[i];if(el.style.display=='block'){el.style.display='none';return}el.style.display='block';if(el.dataset.d)return;el.dataset.d=1;
+ await show(el,`Write a concise, professional program guide for "${p[1]}" (${p[0]}, ${p[2]}) at a distance-learning university. Reply in English with these headings: Overview, Typical eligibility, Sample scheme of study (semester-wise), Career scope. End with: "Indicative information. Confirm details on the official website."`)}
+$('#ps').oninput=$('#pl').onchange=drawProg;drawProg();
+const GR={'A':4,'A-':3.67,'B+':3.33,'B':3,'B-':2.67,'C+':2.33,'C':2,'C-':1.67,'D':1,'F':0};
+function gpRow(){const d=document.createElement('div');d.className='row';d.innerHTML=`<input type="number" class="cr" value="3" min="1" max="6" style="width:70px"><select class="gd">${Object.keys(GR).map(g=>`<option>${g}</option>`).join('')}</select>`;$('#gp').append(d)}
+function gpCalc(){let c=0,p=0;$$('#gp .row').forEach(r=>{const cr=+r.querySelector('.cr').value;c+=cr;p+=cr*GR[r.querySelector('.gd').value]});$('#gpr').textContent=c?'GPA: '+(p/c).toFixed(2)+' (standard 4.0 scale)':''}
+gpRow();gpRow();gpRow();
+
+function openLMS(){const f=$('#lmsf');if(!f.dataset.l){f.src=cfg.lms;f.dataset.l=1}}
+function drawLinks(){$('#linkl').innerHTML=cfg.links.map(l=>{let h=l.u;try{h=new URL(l.u).hostname}catch{}return `<div class="pg"><span><b>${esc(l.n)}</b><br><small class="mut">${esc(h)}</small></span><a class="b sm" href="${esc(l.u)}" target="_blank" rel="noopener">Open</a></div>`}).join('')}
+function contactSend(){const n=$('#cn').value.trim(),m=$('#cmsg').value.trim();if(!n||!m)return alert('Please enter your name and message');window.open(`https://wa.me/${CFG.wa}?text=${encodeURIComponent(`Name: ${n}\nTopic: ${$('#ct').value}\n\n${m}`)}`,'_blank')}
+// ---------- reviews ----------
+function sendReview(){const n=$('#rn').value.trim(),p=$('#rp').value.trim(),t=$('#rt').value.trim();if(!n||!p||!t)return alert('Name, phone and review are required');
+ const f=$('#ri').files[0],fin=img=>{const r={n,p,s:$('#rs').value,t,i:img};SV('myRev',[r,...LS('myRev',[])].slice(0,10));drawHome();$('#rt').value='';
+  window.open(`https://wa.me/${CFG.wa}?text=${encodeURIComponent(`New review\nName: ${n}\nPhone: ${p}\nStars: ${r.s}\n${t}${f?'\n(photo attached separately)':''}`)}`,'_blank')};
+ if(f){if(f.size>400000)return alert('Photo must be under 400 KB');const r=new FileReader();r.onload=()=>fin(r.result);r.readAsDataURL(f)}else fin('')}
+
+// ---------- admin ----------
+let adm=false;
+function drawAdmin(){const el=$('#adm');if(!adm){el.innerHTML=`<div class="card"><h2>Admin login</h2><div class="row"><input type="text" id="au" placeholder="Username"></div><div class="row"><input type="password" id="ap" placeholder="Password"></div><button class="b" onclick="admIn()">Login</button><p class="mut">Sign in with your Supabase admin account.</p></div>`;return}
+ el.innerHTML=`<div class="card"><h2>Admin panel</h2><p class="mut">Changes show on this device at once. To publish them for everyone: press <b>Download portal-config.json</b> and upload that file to the root of your data repo on GitHub.</p>
+ <button class="b hi" onclick="exportCfg()">Download portal-config.json</button><button class="b gr" onclick="adm=false;drawAdmin()">Logout</button></div>
+ <div class="card"><h3>Change username and password</h3><div class="row"><input type="text" id="nu" placeholder="New username" value="${esc(cfg.user)}" style="flex:1 1 160px"><input type="password" id="np" placeholder="New password" style="flex:1 1 160px"><button class="b" onclick="chCred()">Save</button></div></div>
+ <div class="card"><h3>Portal addresses</h3><div class="row"><input type="url" id="s1" placeholder="Official LMS URL" value="${esc(cfg.lms)}"></div><div class="row"><input type="url" id="s2" placeholder="Official website URL" value="${esc(cfg.site)}"></div><div class="row"><input type="url" id="s3" placeholder="Admissions URL" value="${esc(cfg.apply)}"></div><button class="b" onclick="saveSet()">Save</button></div><div class="card"><h3>Links and channel buttons</h3><div id="e-links"></div></div><div class="card"><h3>Announcements</h3><div id="e-ann"></div></div>
+ <div class="card"><h3>Approved reviews (shown on home)</h3><div id="e-reviews"></div></div>`;
+ ed2('links',[['n','Name'],['u','Link (https://…)']]);ed2('ann',[['t','Announcement']]);ed2('reviews',[['n','Student name'],['t','Review text']])}
+function ed2(k,F){const el=$('#e-'+k),norm=x=>typeof x=='string'?(k=='courses'?{n:x}:{t:x}):x;cfg[k]=cfg[k].map(norm);
+ el.innerHTML=cfg[k].map((x,i)=>`<div class="pg"><span>${F.map(f=>esc(x[f[0]])).join(' – ')}</span><button class="b sm gr" onclick="cfg['${k}'].splice(${i},1);saveCfg();drawAdmin()">Delete</button></div>`).join('')+`<div class="row">${F.map(f=>`<input type="text" id="n-${k}-${f[0]}" placeholder="${f[1]}" style="flex:1 1 160px">`).join('')}<button class="b sm" onclick="addE('${k}','${F.map(f=>f[0]).join(',')}')">Add</button></div>`}
+function addE(k,fs){const o={};fs.split(',').forEach(f=>o[f]=$(`#n-${k}-${f}`).value.trim());if(!Object.values(o).every(Boolean))return alert('Fill all fields');cfg[k].push(o);saveCfg();drawAdmin()}
+async function admIn(){const u=$('#au').value.trim(),p=$('#ap').value;if(u==cfg.user&&(cfg.hash&&await sha(p)==cfg.hash)){adm=true;drawAdmin()}else alert('Wrong username or password')}
+async function chCred(){const u=$('#nu').value.trim(),p=$('#np').value;if(!u||p.length<6)return alert('Username required and password must be 6+ characters');cfg.user=u;cfg.hash=await sha(p);saveCfg();alert('Saved. Download portal-config.json and upload it to GitHub so it works on every device.')}
+function saveSet(){cfg.lms=$('#s1').value.trim();cfg.site=$('#s2').value.trim();cfg.apply=$('#s3').value.trim();$('#lmsf').dataset.l='';saveCfg();alert('Saved')}
+function exportCfg(){const o={...cfg},b=new Blob([JSON.stringify(o,null,1)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='portal-config.json';a.click()}
+
+loadCfg();loadLib();go(LS('tab','home'));
+</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="extras.js"></script>
+<script src="extras2.js"></script>
+<script src="data3.js"></script>
+<script src="portal-ui.js"></script>
+<script src="portal-tools.js"></script>
+<script src="portal-pro.js"></script>
+<script src="portal-v5.js"></script>
+<script src="v7-core.js"></script>
+<script src="v7-learn.js"></script>
+<script src="v7-social.js"></script>
+<script src="v8-ui.js"></script>
+<script src="v9.js"></script>
+</body></html>
