@@ -1,0 +1,28 @@
+name: VU updates
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # every 15 minutes (GitHub may delay a few minutes at busy times)
+  workflow_dispatch:
+concurrency:
+  group: vu-updates
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 20}
+      - run: node scripts/vu-watch.mjs
+      - name: Commit if updates.json changed
+        run: |
+          git config user.name "vu-watch"; git config user.email "bot@users.noreply.github.com"
+          git add updates.json
+          if git diff --cached --quiet; then echo "no changes"; else
+            git commit -m "VU updates $(date -u +%F\ %H:%M)"
+            git pull --rebase -q || true
+            git push
+          fi
